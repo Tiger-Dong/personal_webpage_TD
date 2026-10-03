@@ -1,0 +1,10 @@
+.DS_Store
+
+# Keep private source documents and internal materials out of the public portfolio.
+information/
+private/
+*.doc
+*.docx
+*.numbers
+*.xls
+*.xlsx

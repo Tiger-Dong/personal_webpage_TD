@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Selected engineering and software projects by Tiger Dong, including public technical evidence.">
+  <title>Tiger Dong | Projects</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="theme-color" content="#8a3f12">
+  <link rel="canonical" href="https://tiger-dong.github.io/personal_webpage_TD/project_interface.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tiger Dong | Selected Projects">
+  <meta property="og:description" content="Engineering and software case studies with public technical evidence.">
+  <meta property="og:url" content="https://tiger-dong.github.io/personal_webpage_TD/project_interface.html">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body class="locale-en">
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="index.html">Tiger Dong</a>
+      <div class="topbar-actions">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">主页</span></a>
+          <a href="about.html"><span class="lang-en">About Me</span><span class="lang-zh">个人介绍</span></a>
+          <a class="active" href="project_interface.html"><span class="lang-en">Projects</span><span class="lang-zh">项目</span></a>
+          <a href="activities.html"><span class="lang-en">Activities</span><span class="lang-zh">活动经历</span></a>
+        </nav>
+        <button class="lang-toggle" type="button" data-lang-toggle>中文</button>
+      </div>
+    </header>
+
+    <div class="page-layout">
+      <aside class="sidebar">
+        <h3><span class="lang-en">On This Page</span><span class="lang-zh">当前页面</span></h3>
+        <nav class="sidebar-nav">
+          <a href="#overview"><span class="lang-en">Overview</span><span class="lang-zh">概览</span></a>
+          <a href="#michelson">Michelson</a>
+          <a href="#agent-service">agent_service</a>
+          <a href="#polyurethane"><span class="lang-en">Polyurethane</span><span class="lang-zh">聚氨酯平台</span></a>
+          <a href="#wolf-sheep"><span class="lang-en">Wolf-Sheep</span><span class="lang-zh">狼羊模拟</span></a>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="lang-en">SELECTED PROJECTS</span><span class="lang-zh">代表项目</span></span>
+            <h1><span class="lang-en">Technical work with public evidence.</span><span class="lang-zh">以公开证据呈现技术实践。</span></h1>
+            <p><span class="lang-en">Each case study identifies the problem, my responsibility, the technical approach, public evidence, and the result of the work. Internal documents and partner information are not published here.</span><span class="lang-zh">每个案例均说明问题、我的职责、技术路径、公开证据与完成结果。本站不公开内部文档或合作方信息。</span></p>
+            <div class="actions"><a class="button primary" href="#michelson"><span class="lang-en">Read Case Studies</span><span class="lang-zh">阅读项目案例</span></a></div>
+          </div>
+          <div class="hero-visual projects" aria-hidden="true"></div>
+        </section>
+
+        <section class="section" id="project-list">
+          <article class="project-detail" id="michelson">
+            <div class="year">2026<small>05.26-08.08</small></div>
+            <div>
+              <h2>Arduino + Michelson Interferometer</h2>
+              <div class="role"><span class="lang-en">System developer · Beijing Jiaotong University</span><span class="lang-zh">系统开发 · 北京交通大学</span></div>
+              <p><span class="lang-en">A prototype control module for a Michelson interferometer that accepts voice and text instructions for selected adjustment tasks.</span><span class="lang-zh">面向迈克耳孙干涉仪的原型控制模块，可通过语音与文字指令完成部分调节任务。</span></p>
+              <div class="detail-grid">
+                <section class="detail-box"><h4><span class="lang-en">Problem</span><span class="lang-zh">问题</span></h4><p><span class="lang-en">Optical alignment depends on small, repeated manual motions. That can make operation difficult for new users and for people with limited hand mobility.</span><span class="lang-zh">光学调节依赖细微、重复的手动操作，对初学者和手部活动受限的使用者均可能构成障碍。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">My Role</span><span class="lang-zh">我的职责</span></h4><p><span class="lang-en">I developed the control workflow, integrated six motorized channels for coarse, fine, and two-axis mirror adjustment, and designed compact adapters and stabilizing brackets.</span><span class="lang-zh">我开发控制流程，集成六路电机以完成粗调、细调与镜面双轴调节，并设计紧凑的转接件和稳定支架。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Technical Approach</span><span class="lang-zh">技术路径</span></h4><div class="chips"><span class="chip">Arduino</span><span class="chip">Stepper Motors</span><span class="chip">Speech Recognition</span><span class="chip">LLM Command Parsing</span><span class="chip">3D Printing</span></div><p><span class="lang-en">Before motion, the system checks the requested target and movement parameters and rejects unclear commands.</span><span class="lang-zh">系统会在运动前检查目标与运动参数，并拒绝含义不明确的指令。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Evidence</span><span class="lang-zh">公开证据</span></h4><div class="material-links"><a href="https://youtu.be/soUNO5ICLBM" target="_blank" rel="noreferrer"><span class="lang-en">Watch system demonstration</span><span class="lang-zh">观看系统演示</span></a><a href="https://youtu.be/Xa32R2NpT-M" target="_blank" rel="noreferrer"><span class="lang-en">Watch component demonstration</span><span class="lang-zh">观看组件演示</span></a></div></section>
+                <section class="detail-box"><h4><span class="lang-en">Result</span><span class="lang-zh">结果</span></h4><p><span class="lang-en">The prototype provides voice and text control for selected adjustment tasks. By simplifying the bracket geometry and print settings, I reduced one bracket's print time from about three hours to sixteen minutes, enabling faster fit-testing iterations.</span><span class="lang-zh">该原型已能以语音和文字控制指定调节任务。通过简化支架结构并调整打印参数，我将单个支架的打印时间从约三小时缩短至十六分钟，便于更快地进行装配测试与迭代。</span></p></section>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail" id="agent-service">
+            <div class="year">2025</div>
+            <div>
+              <h2><span class="lang-en">Weather &amp; Location Planning Assistant</span><span class="lang-zh">天气与地点规划助手</span></h2>
+              <div class="role"><span class="lang-en">Independent developer · United States · Repository: agent_service</span><span class="lang-zh">独立开发 · 美国 · 仓库：agent_service</span></div>
+              <p><span class="lang-en">A lightweight local-model workflow that combines natural-language questions with weather and geocoding utilities.</span><span class="lang-zh">将自然语言提问与天气、地理编码工具结合的轻量本地模型工作流。</span></p>
+              <div class="detail-grid">
+                <section class="detail-box"><h4><span class="lang-en">Problem</span><span class="lang-zh">问题</span></h4><p><span class="lang-en">A practical trip or daily-planning question often requires separate location, coordinate, forecast, and interpretation steps.</span><span class="lang-zh">一次日常出行或规划提问，往往需要分别查询地点、坐标、天气预报并理解结果。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">My Role</span><span class="lang-zh">我的职责</span></h4><p><span class="lang-en">I independently designed the query flow, connected the model with weather and location modules, and transformed returned data into user-facing clothing and trip-preparation suggestions.</span><span class="lang-zh">我独立设计查询流程，将模型与天气、地点模块连接，并把返回数据转化为穿着和出行准备建议。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Technical Approach</span><span class="lang-zh">技术路径</span></h4><div class="chips"><span class="chip">Ollama</span><span class="chip">Qwen3</span><span class="chip">Geocoding</span><span class="chip">Weather API</span><span class="chip">Bilingual Input</span></div><p><span class="lang-en">The workflow handles mixed Chinese-English questions, identifies a place, retrieves coordinates and forecast data, then composes a practical response.</span><span class="lang-zh">该流程可处理中英文混合提问，识别地点、查询经纬度与天气预报，并生成实用回复。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Evidence</span><span class="lang-zh">公开证据</span></h4><div class="material-links"><a href="https://github.com/Tiger-Dong/agent_service" target="_blank" rel="noreferrer"><span class="lang-en">View source code on GitHub</span><span class="lang-zh">在 GitHub 查看源代码</span></a></div></section>
+                <section class="detail-box"><h4><span class="lang-en">Result</span><span class="lang-zh">结果</span></h4><p><span class="lang-en">The completed prototype turns a single natural-language request into location context, weather information, and a concise preparation suggestion.</span><span class="lang-zh">完成的原型可将一次自然语言请求转化为地点信息、天气数据和简洁的出行准备建议。</span></p></section>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail" id="polyurethane">
+            <div class="year">2024<small>05.18-08.10</small></div>
+            <div>
+              <h2><span class="lang-en">Polyurethane Simulation Platform</span><span class="lang-zh">聚氨酯材料模拟平台</span></h2>
+              <div class="role"><span class="lang-en">Frontend developer · Beijing Jiaotong University</span><span class="lang-zh">前端开发 · 北京交通大学</span></div>
+              <p><span class="lang-en">A frontend for a material-simulation workflow supporting formulation studies for railway elastic pads.</span><span class="lang-zh">服务于铁路弹性垫板配方研究的材料模拟工作流前端。</span></p>
+              <div class="detail-grid">
+                <section class="detail-box"><h4><span class="lang-en">Problem</span><span class="lang-zh">问题</span></h4><p><span class="lang-en">A simulation backend is difficult for non-programming material specialists to use directly when entering formulations, tracking tasks, and comparing outputs.</span><span class="lang-zh">材料专业人员若直接使用模拟后台，在输入配方、跟踪任务和比较结果时会面临较高使用门槛。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">My Role</span><span class="lang-zh">我的职责</span></h4><p><span class="lang-en">I developed frontend pages for task creation, task management, and result details, connected them to the simulation backend, and refined the material-input experience.</span><span class="lang-zh">我开发任务创建、任务管理和结果详情页面，将其连接到模拟后台，并完善材料输入体验。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Technical Approach</span><span class="lang-zh">技术路径</span></h4><div class="chips"><span class="chip">Frontend Development</span><span class="chip">Form Validation</span><span class="chip">Task Management</span><span class="chip">Charts</span><span class="chip">Search</span></div><p><span class="lang-en">The interface uses table-based formulation input, three-decimal precision, constrained fields, searchable time-ordered records, progress updates, charts, and result tables.</span><span class="lang-zh">界面采用表格式配方输入、三位小数精度和字段约束，并提供可检索的时间排序记录、进度更新、图表和结果表格。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Evidence</span><span class="lang-zh">公开证据</span></h4><div class="material-links"><a href="https://github.com/Tiger-Dong/lab-frontend" target="_blank" rel="noreferrer"><span class="lang-en">View public frontend repository</span><span class="lang-zh">查看公开前端仓库</span></a></div><p><span class="lang-en">Internal design documents, registration files, and collaboration materials are intentionally not published.</span><span class="lang-zh">内部设计文档、登记文件和合作材料均不在本站公开。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Result</span><span class="lang-zh">结果</span></h4><p><span class="lang-en">The frontend gives users a structured path to enter formulations, submit calculations, monitor progress, and compare simulation results before arranging physical trials.</span><span class="lang-zh">该前端为用户提供了输入配方、提交计算、监控进度和比较模拟结果的结构化流程，帮助在安排实体试验前完成初步比较。</span></p></section>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail" id="wolf-sheep">
+            <div class="year">2023<small>06.01-08.10</small></div>
+            <div>
+              <h2><span class="lang-en">Wolf-Sheep Collective Behavior Simulation</span><span class="lang-zh">狼羊群体行为模拟</span></h2>
+              <div class="role"><span class="lang-en">Independent developer · United States</span><span class="lang-zh">独立开发 · 美国</span></div>
+              <p><span class="lang-en">A Python simulation inspired by research on collective predation and escape.</span><span class="lang-zh">受群体捕食与逃逸研究启发而完成的 Python 仿真项目。</span></p>
+              <div class="detail-grid">
+                <section class="detail-box"><h4><span class="lang-en">Problem</span><span class="lang-zh">问题</span></h4><p><span class="lang-en">Research on collective pursuit and escape describes interactions that are difficult to understand from equations and figures alone.</span><span class="lang-zh">群体追逐与逃逸研究中的互动关系，单靠公式和论文图表不易直观理解。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">My Role</span><span class="lang-zh">我的职责</span></h4><p><span class="lang-en">I independently translated paper concepts into a configurable program, implemented the interaction rules, and maintained logging and component tests for the model.</span><span class="lang-zh">我独立将论文概念转化为可配置程序，实现交互规则，并为模型保留日志和组件测试。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Technical Approach</span><span class="lang-zh">技术路径</span></h4><div class="chips"><span class="chip">Python</span><span class="chip">Agent-Based Modeling</span><span class="chip">Logging</span><span class="chip">Component Tests</span></div><p><span class="lang-en">The model includes movement, neighborhood alignment, repulsion, pursuit, and escape rules with adjustable parameters.</span><span class="lang-zh">模型包含移动、邻域对齐、排斥、追逐和逃逸规则，并允许调整参数。</span></p></section>
+                <section class="detail-box"><h4><span class="lang-en">Evidence</span><span class="lang-zh">公开证据</span></h4><div class="material-links"><a href="https://github.com/Tiger-Dong/wolf_sheep" target="_blank" rel="noreferrer"><span class="lang-en">View source code on GitHub</span><span class="lang-zh">在 GitHub 查看源代码</span></a><a href="https://harvest.aps.org/v2/journals/articles/10.1103/PhysRevLett.109.118104/fulltext" target="_blank" rel="noreferrer"><span class="lang-en">Read the research paper</span><span class="lang-zh">阅读参考论文</span></a></div></section>
+                <section class="detail-box"><h4><span class="lang-en">Result</span><span class="lang-zh">结果</span></h4><p><span class="lang-en">The program makes it possible to vary local interaction rules and observe changes in simulated group behavior, connecting scientific reading with a testable implementation.</span><span class="lang-zh">该程序可以改变局部交互规则并观察模拟群体行为的变化，将论文阅读与可测试的实现连接起来。</span></p></section>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <footer class="footer"><span class="lang-en">Tiger Dong Portfolio</span><span class="lang-zh">Tiger Dong 作品集</span><span class="footer-divider" aria-hidden="true">·</span><a class="footer-update" href="history_update.html"><span class="lang-en">Site updates</span><span class="lang-zh">网站更新</span></a></footer>
+      </main>
+    </div>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+</html>

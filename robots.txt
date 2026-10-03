@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tiger-dong.github.io/personal_webpage_TD/sitemap.xml

@@ -767,3 +767,40 @@ a:focus-visible, button:focus-visible {
   position: relative;
   z-index: 1;
 }
+
+/* Use the activity timeline's editorial introduction style on text-first pages. */
+.page-intro .hero-copy {
+  max-width: 780px;
+}
+
+.page-intro .hero-copy > p {
+  max-width: 66ch;
+}
+
+.page-intro .actions {
+  margin-top: 20px;
+}
+
+.page-intro .profile-facts {
+  gap: 8px;
+  margin-top: 19px;
+}
+
+.page-intro .profile-facts div {
+  grid-template-columns: 136px minmax(0, 1fr);
+  gap: 12px;
+  padding: 0;
+  border-left: 0;
+  background: transparent;
+}
+
+.page-intro .profile-facts strong {
+  padding-top: 1px;
+}
+
+@media (max-width: 560px) {
+  .page-intro .profile-facts div {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
